@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    let current_users = ["hasan", "ali", "raza", "zain"];
+    let new_users = ["ahmed", "ali", "abid", "zain"];
+
+    new_users.forEach(function (check_new_users) {
+      current_users.forEach(function (check_current_users) {
+        if (check_new_users == check_current_users) {
+          console.log(
+            "new user name has been already used. you need to enter a new user name"
+          );
+        }
+      });
+    });
+  </script>
+  <body></body>
+</html>
