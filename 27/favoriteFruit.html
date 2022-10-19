@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+ let fruits=["banana","oranges","apples","pineapples"]
+ let favorite_fruits =["banana","oranges","apples"]
+
+ const check=function (fruit_name){
+    fruits.forEach(function (check_fruits){
+        if(check_fruits==fruit_name){
+            console.log("it is in the list")
+        }
+    })
+ }
+ check("oranges","banana","apples")
+
+ for(let i=0;i<favorite_fruits.length;i++){
+    if(favorite_fruits[i]==fruits[i])
+    {console.log("i really like "+favorite_fruits[i])}
+   
+
+ }
+</script>
+<body>
+    
+</body>
+</html>
