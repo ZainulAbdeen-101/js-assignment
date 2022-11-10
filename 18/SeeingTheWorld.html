@@ -7,38 +7,38 @@
     <title>Document</title>
     <script>
         let world =["Paris","Switzerland","Japan","greenland"]
-        document.write(world +"<br><br>")
+        console.log(world)
      function nonMutatingSort(arr){
-        return arr.sort()
+        return arr.slice().sort()
 
      }
-     document.write(nonMutatingSort(world)+"<br><br>")
+     console.log(nonMutatingSort(world))
 
-     document.write(world +"<br><br>")
+     console.log(world)
 
      function nonMutatingReverse(arr){
-        return arr.reverse()
+        return arr.slice().reverse()
 
      }
-     document.write(nonMutatingReverse(world)+"<br><br>")
+     console.log(nonMutatingReverse(world))
 
-     document.write(world+"<br><br>")
-
-     world.reverse()
-
-     document.write(world +"<br><br>")
+     console.log(world)
 
      world.reverse()
 
-     document.write(world+"<br><br>")
+     console.log(world)
+
+     world.reverse()
+
+     console.log(world)
 
      world.sort()
 
-     document.write(world+"<br><br>")
+     console.log(world)
      
      world.sort().reverse()
      
-     document.write(world)
+     console.log(world)
 
 
 
