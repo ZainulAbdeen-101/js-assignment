@@ -7,14 +7,16 @@
     <title>Document</title>
 </head>
 <script>
-    const Album=function(artist_name,album_title){
+    const Album=function(artist_name,album_title,tracks){
         let Album1={
             artist:artist_name,
-            albumName:album_title
+            albumName:album_title,
+            TRACKS:tracks
             
         }
         console.log(Album1.artist)
         console.log(Album1.albumName)
+        console.log(Album1.TRACKS)
     }
     Album("atif Aslam","doorie")
 </script>

@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<script>
-    function Cars(name,model){
-        let Car ={
-            Name:name,
-            Model:model,
-        }
-        console.log(Car.Name,Car.Model)
+  </head>
+  <script>
+    function Car({...parameter }) {
+      let MyObject = {};
+      var keys = Object.keys(parameter);
+      keys.map((items,index) => {
+       console.log( MyObject[`${items}`] = parameter[keys[index]])
+      });
+      return MyObject
     }
 
-    Cars("Bughatti","3000")
-</script>
-<body>
-    
-</body>
+    let carManufacturer = Car({
+      color: "black",
+      brakes: "Antilock brakes",
+      control: "Electronic stability control",
+    });
+    console.log(carManufacturer);
+  </script>
+  <body></body>
 </html>
